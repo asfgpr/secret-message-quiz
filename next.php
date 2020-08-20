@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="verify-admitad" content="39f980aeb7">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/files/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/files/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/files/favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link rel="mask-icon" href="assets/files/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#9f00a7">
 <meta name="theme-color" content="#8a2be2">
 <style>
@@ -28,35 +28,35 @@
       font-weight: 600;
     }
   </style>
-<meta property="og:title" content="Send secret message to your friends via 🔒 Secret Messages 2020 😍 || QuizPrank.xyz">
-<meta property="og:site_name" content="🔒 Secret Messages 2020 😍 || QuizPrank.xyz">
-<meta property="og:url" content="http://quizprank.xyz">
+<meta property="og:title" content="Send secret message to your friends via 🔒 Secret Messages 2020 😍 || SecretlyMessages.in">
+<meta property="og:site_name" content="🔒 Secret Messages 2020 😍 || SecretlyMessages.in">
+<meta property="og:url" content="http://SecretlyMessages.in">
 <meta property="og:description" content="Send a secret message to your friend, have fun. Create your link and get secret messages. Click here!">
 <meta property="og:type" content="website">
-<meta property="og:image" content="logo-square.png">
+<meta property="og:image" content="assets/files/logo-square.png">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <script defer="" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script defer="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<title>🔒 Secret Messages 2020 😍 || QuizPrank.xyz</title>
+<title>🔒 Secret Messages 2020 😍 || SecretlyMessages.in</title>
 </head>
 <body>
 
 <main>
 
-<?php require 'nav.php'; ?>
+<?php require 'assets/php/nav.php'; ?>
 
 <div class="container">
 <div class="row">
 <div class="card col-sm">
                     <div class="tick">
-                        <img src="logo-square.png" alt="tick" style="width:100px;height:100px;border-radius:50%;">
+                        <img src="assets/files/logo-square.png" alt="tick" style="width:100px;height:100px;border-radius:50%;">
                     </div>
                     <?php  
                       if(isset($_POST['name'])){
                         $uid = $_POST['name'];
                         $msg = $_POST['ans1'];
-                        require 'config.php';
+                        require 'assets/php/config.php';
                         $query = "INSERT INTO message (uid, msg) VALUES('$uid', '$msg')";
                         if(mysqli_query($conn, $query)){
                           echo '<h2 id="hh">Thanks for writing the secret message for <span id="name">your friend</span>. 🤩😍</h2>';
@@ -83,17 +83,17 @@
 <div class="row">
 <div class="card col-sm">
 
-<div id="M478305ScriptRootC843543_07b63">
+<!-- <div id="M478305ScriptRootC843543_07b63">
 
 
 
-</div>
+</div> -->
 </div>
 </div>
 
 </main>
 
-<?php require 'footer.php'; ?>
+<?php require 'assets/php/footer.php'; ?>
 
 
 

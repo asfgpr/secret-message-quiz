@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 
+<script data-ad-client="ca-pub-7749216208188385" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="verify-admitad" content="39f980aeb7">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/files/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/files/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/files/favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link rel="mask-icon" href="assets/files/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#9f00a7">
 <meta name="theme-color" content="#8a2be2">
 <style>
@@ -28,26 +28,26 @@
       font-weight: 600;
     }
   </style>
-<meta property="og:title" content="Send secret message to your friends via 🔒 Secret Messages 2020 😍 || QuizPrank.xyz">
-<meta property="og:site_name" content="🔒 Secret Messages 2020 😍 || QuizPrank.xyz">
-<meta property="og:url" content="http://quizprank.xyz">
+<meta property="og:title" content="Send secret message to your friends via 🔒 Secret Messages 2020 😍 || secretlymessages.in">
+<meta property="og:site_name" content="🔒 Secret Messages 2020 😍 || secretlymessages.in">
+<meta property="og:url" content="https://secretlymessages.in">
 <meta property="og:description" content="Send a secret message to your friend, have fun. Create your link and get secret messages. Click here!">
 <meta property="og:type" content="website">
-<meta property="og:image" content="logo-square.png">
+<meta property="og:image" content="assets/files/logo-square.png">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <script defer="" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script defer="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 
-<title>🔒 Secret Messages 2020 😍 || secretmsg.in</title>
+<title>🔒 Secret Messages 2020 😍 || secretlymessages.in</title>
 </head>
 <body>
 <main>
 
 <?php 
-  require 'nav.php'; 
+  require 'assets/php/nav.php'; 
   if(isset($_COOKIE['userid'])){
     header("Location: result.php");
   }
@@ -75,17 +75,17 @@
 <div class="row">
 <div class="card col-sm">
 
-<div id="M478305ScriptRootC843543_07b63">
+<!-- <div id="M478305ScriptRootC843543_07b63">
 
 
 
-</div>
+</div> -->
 </div>
 </div>
 
 </main>
 
-<?php require 'footer.php'; ?>
+<?php require 'assets/php/footer.php'; ?>
 
 
 

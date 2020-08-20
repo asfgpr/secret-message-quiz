@@ -85,7 +85,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-        <a href="mailto:info@secretmsg.in" class="btn btn-warning" style="margin-left:auto;">Mail Me</a>
+        <a href="mailto:info@aasifansari.com" class="btn btn-warning" style="margin-left:auto;">Mail Me</a>
       </div>
     </div>
   </div>

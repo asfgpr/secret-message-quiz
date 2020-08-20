@@ -11,20 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/files/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/files/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#9f00a7">
     <meta name="theme-color" content="#8a2be2">
 
-    <meta name="googlebot" content="noindex, nofollow">
+    <!-- <meta name="googlebot" content="noindex, nofollow"> -->
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
         #M478305ScriptRootC736045 {
@@ -106,7 +106,7 @@
 <body>
 
     <?php 
-    require 'config.php';
+    require 'assets/php/config.php';
         if(isset($_POST['sub'])){
             $name = $_POST['name'];
             $uid = md5($name);
@@ -141,22 +141,22 @@
     <div class="grp">
         <span class="icon">
         <a href="https://www.instagram.com/asfgpr/" target="_blank">
-                <img src="ig_img.png" alt="Instagram" class="social-img">
+                <img src="assets/files/ig_img.png" alt="Instagram" class="social-img">
         </a>
         </span>
         <span class="icon">
         <a href="https://twitter.com/asfgpr" target="_blank">
-                <img src="twitter_img.png" alt="Twitter" class="social-img">
+                <img src="assets/files/twitter_img.png" alt="Twitter" class="social-img">
         </a>
         </span>
     </div>
 </div>
     <main>
-        <?php require 'nav.php'; ?>
+        <?php require 'assets/php/nav.php'; ?>
         <div class="container">
             <div class="row">
                 <div class="card col-sm">
-                                            <div class="password" style="display: none;">
+                            <div class="password" style="display: none;">
                             <p>Please take a screenshot of these details</p>
                             <hr>
                             <ul id="pass">
@@ -167,16 +167,16 @@
                             <p>You need these details to login from anywhere! PIN cannot be restored!</p>
                         </div>
                                         <h2 id="h2-result">Share this link with your friends and collect anonymous Messages</h2>
-                    <div class="form-group"><input type="text" class="form-control " name="name" id="in-name" value="http://xyz.com/message.php?id=<?php echo $uid; ?>" required></div>
+                    <div class="form-group"><input type="text" class="form-control " name="name" id="in-name" value="<?php echo "http://$_SERVER[HTTP_HOST]/message.php?id=$uid"; ?>" required></div>
                     <div class="btn-group-vertical" role="group">
                         <button id="myInput" class="btn btn-block" onclick="myFunction()">Click to Copy</button>
-                        <a href="whatsapp://send?text=Send%20secret%20message%20%F0%9F%98%81%20to%20alex%2C%20%20they%20will%20never%20know%20who%20sent%20them%20which%20message%20%F0%9F%98%9D.%20%0A%0AIt%27s%20fun%2C%20Try%20here%20%F0%9F%91%89%20http://xyz.com/message.php?id=<?php echo $uid; ?>" data-action="share/whatsapp/share" class="btn btn-block" id="whatsapp">Add to Whatsapp Story</a>
+                        <a href="whatsapp://send?text=Send%20secret%20message%20%F0%9F%98%81%20to%20alex%2C%20%20they%20will%20never%20know%20who%20sent%20them%20which%20message%20%F0%9F%98%9D.%20%0A%0AIt%27s%20fun%2C%20Try%20here%20%F0%9F%91%89%20<?php echo "http://$_SERVER[HTTP_HOST]/message.php?id=$uid"; ?>" data-action="share/whatsapp/share" class="btn btn-block" id="whatsapp">Add to Whatsapp Story</a>
                         <button class="btn btn-block" id="tweet_bio" onclick="tweet_bio()">Add to Twitter BIO</button>
 
                     </div>
                     <div class="row" style="margin:10px 0px;">
                         <div class="col-sm d-flex justify-content-center">
-                            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="center twitter-share-button" data-size="large" data-text="Send me a secret message. I will never know who sent me which message. Its fun, try here -" data-url="http://quizprank.xyz/message.php?id=<?php echo $uid; ?>" data-via="QuizPrank" data-hashtags="quizprank" data-related="TheRohitDas,Quizprank" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="center twitter-share-button" data-size="large" data-text="Send me a secret message. I will never know who sent me which message. Its fun, try here -" data-url="<?php echo "http://$_SERVER[HTTP_HOST]/message.php?id=$uid" ?>" data-via="Secret Message" data-hashtags="SecretMessage" data-related="Aasif,SecretMessage" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                         </div>
                     </div>
@@ -193,11 +193,11 @@
                 </div>
             </div>
 
-            <div id="M478305ScriptRootC736045">
+            <!-- <div id="M478305ScriptRootC736045">
                 <div id="M478305PreloadC736045"> Loading...
                 </div>
                 
-            </div>
+            </div> -->
 
 
                 <?php
@@ -251,8 +251,8 @@
                 ?>
 
                         <!-- Composite Start -->
-            <div id="M478305ScriptRootC840543">
-            </div>
+            <!-- <div id="M478305ScriptRootC840543">
+            </div> -->
             <!-- Composite End -->
         </div>
         </div>
@@ -308,7 +308,7 @@
         }
     </script>
     <!-- Footer -->
-<?php require 'footer.php'; ?>
+<?php require 'assets/php/footer.php'; ?>
 <!-- Footer -->
 
 <!-- Google Analytics Tag-->

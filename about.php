@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/files/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/files/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#9f00a7">
     <meta name="theme-color" content="#8a2be2">  
     <title>About us - Secret Message || 2020
@@ -31,7 +31,7 @@
 <div class="row">
 <section class="card col-sm">
 
-<p><img style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%;" src="logo-square.png" alt="quizprank-logo" width="150" height="150" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%;" src="assets/files/logo-square.png" alt="quizprank-logo" width="150" height="150" /></p>
 <p>&nbsp;</p>
 <p>I never thought someone will visit this page but here you are! If you are facing any trouble, you can send me an email or DM on Insta.</p>
 <h1>Why I created this website and How I am running it?</h1>
@@ -46,14 +46,14 @@
 <p>Anything I earn from this website goes towards my Education. I try to support under priviledged students too.</p>
 <p>This website is just for fun! I really hope you people are enjoying it!</p>
 
-Do follow me on INSTAGRAM- <a href="https://www.instagram.com/asfgpr/">@asfgpr</a> and TWITTER- <a href="https://twitter.com/asfgpr">@asfgpr</a> .
+Do follow me on INSTAGRAM- <a href="https://www.instagram.com/asfgpr/">@asfgpr</a> and TWITTER- <a href="https://twitter.com/asfgpr">@asfgpr</a> and Facebook- <a href="https://facebook.com/asfgpr">facebook.com/asfgpr</a> .
 
 </section>
 </div>
 </div>
 </div>
 <!-- Footer -->
-<?php require 'footer.php'; ?>
+<?php require 'assets/php/footer.php'; ?>
 <!-- Footer -->
 
 
